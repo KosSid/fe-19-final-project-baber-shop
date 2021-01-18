@@ -18,6 +18,12 @@ const { Item } = Menu
 function SiteHeader() {
   return (
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+      <div
+        className="side"
+        style={{ height: '50px', backgroundColor: 'yellow' }}
+      >
+        123
+      </div>
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
         <Item key="home" icon={<AppstoreOutlined />}>

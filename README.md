@@ -1,7 +1,7 @@
 
 ----------------------------Initial Settings
 
-1. $ npm install
+1. $ npm install in both folders: server and client
 2. setup .env files:
    * env file for server => 
         - to create in the server root folder .env file
