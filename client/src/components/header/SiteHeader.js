@@ -44,6 +44,10 @@ function SiteHeader() {
           <Link to="/login">Login</Link>
         </Item>
 
+        <Item key="log-out" icon={<UserOutlined />}>
+          <Link to="/">Logout</Link>
+        </Item>
+
         <Item key="admin-dashboard" icon={<SettingOutlined />}>
           <Link to="/admin/dashboard">Admin dashboard</Link>
         </Item>
