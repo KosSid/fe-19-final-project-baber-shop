@@ -1,11 +1,11 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import {useSelector} from "react-redux"
+// import {useSelector} from "react-redux"
 import LoadingToRedirect from "./LoadingToRedirect"
 
 
 const  UserRoute = ({...rest }) => {
-    //
+
     // const user = useSelector( state => state.user);
 
     // test user value for current set-up (will be removed)| should be initiated in store

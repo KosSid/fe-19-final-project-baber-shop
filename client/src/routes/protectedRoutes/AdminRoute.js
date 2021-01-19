@@ -1,8 +1,7 @@
-import React from 'react'
-import {useEffect, useState} from 'react';
-import {Route} from 'react-router-dom';
-import {useSelector} from "react-redux";
-import LoadingToRedirect from "./LoadingToRedirect";
+import React, {useEffect, useState} from 'react'
+import {Route} from 'react-router-dom'
+// import {useSelector} from "react-redux"
+import LoadingToRedirect from "./LoadingToRedirect"
 
 
 const  AdminRoute = ({...rest }) => {
@@ -17,7 +16,7 @@ const  AdminRoute = ({...rest }) => {
 
     useEffect(() => {
         if(user && user.token) {
-            //here will be request to server to check user status if postive setOk(true)
+            // here will be request to server to check user status if postive setOk(true)
             setOk(true)
 
         }

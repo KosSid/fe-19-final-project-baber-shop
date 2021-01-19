@@ -7,7 +7,6 @@ import {
   SettingOutlined,
   UserOutlined,
   UserAddOutlined,
-  LogoutOutlined,
   ShoppingOutlined,
   ShoppingCartOutlined,
 } from '@ant-design/icons'
