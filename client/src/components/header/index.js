@@ -15,7 +15,7 @@ import {
 const { Header } = Layout
 const { Item } = Menu
 
-function Index() {
+function SiteHeader() {
   return (
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
       <div className="logo" />
@@ -52,4 +52,4 @@ function Index() {
   )
 }
 
-export default Index
+export default SiteHeader;
