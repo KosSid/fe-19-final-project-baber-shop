@@ -1,5 +1,5 @@
 import React from 'react'
-import './Shop.less'
+import './styles.less'
 
 function Shop () {
   return (

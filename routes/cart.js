@@ -13,18 +13,18 @@ const {
   getCart
 } = require("../controllers/cart");
 
-// @route   POST /cart
-// @desc    Create cart
+// @route   POST /Cart
+// @desc    Create Cart
 // @access  Private
 router.post("/", passport.authenticate("jwt", { session: false }), createCart);
 
-// @route   PUT /cart
-// @desc    Update cart when adding / deleting products in cart
+// @route   PUT /Cart
+// @desc    Update Cart when adding / deleting products in Cart
 // @access  Private
 router.put("/", passport.authenticate("jwt", { session: false }), updateCart);
 
-// @route   PUT /cart/:productId
-// @desc    Add one product to cart
+// @route   PUT /Cart/:productId
+// @desc    Add one Product to Cart
 // @access  Private
 router.put(
   "/:productId",
@@ -32,8 +32,8 @@ router.put(
   addProductToCart
 );
 
-// @route   DELETE /cart
-// @desc    Delete cart (when the order is placed or customer logging out)
+// @route   DELETE /Cart
+// @desc    Delete Cart (when the order is placed or customer logging out)
 // @access  Private
 router.delete(
   "/",
@@ -41,8 +41,8 @@ router.delete(
   deleteCart
 );
 
-// @route   DELETE /cart/:productId
-// @desc    Delete one product from cart
+// @route   DELETE /Cart/:productId
+// @desc    Delete one Product from Cart
 // @access  Private
 router.delete(
   "/:productId",
@@ -50,17 +50,17 @@ router.delete(
   deleteProductFromCart
 );
 
-// @route   DELETE /cart/product/:productId
-// @desc    Delete one product from cart
+// @route   DELETE /Cart/Product/:productId
+// @desc    Delete one Product from Cart
 // @access  Private
 router.delete(
-  "/product/:productId",
+  "/Product/:productId",
   passport.authenticate("jwt", { session: false }),
   decreaseCartProductQuantity
 );
 
-// @route   GET /cart
-// @desc    Get cart for customer
+// @route   GET /Cart
+// @desc    Get Cart for customer
 // @access  Private
 router.get("/", passport.authenticate("jwt", { session: false }), getCart);
 

@@ -31,7 +31,7 @@ router.put(
 );
 
 // @route   PUT /wishlist/:productId
-// @desc    Add one product to wishlist
+// @desc    Add one Product to wishlist
 // @access  Private
 router.put(
   "/:productId",
@@ -49,7 +49,7 @@ router.delete(
 );
 
 // @route   DELETE /wishlist/:productId
-// @desc    Delete one product from wishlist
+// @desc    Delete one Product from wishlist
 // @access  Private
 router.delete(
   "/:productId",

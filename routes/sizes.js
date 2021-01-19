@@ -15,7 +15,7 @@ const {
 // @access  Private
 router.post(
   "/",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   addSize
 );
 
@@ -24,7 +24,7 @@ router.post(
 // @access  Private
 router.put(
   "/:id",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   updateSize
 );
 
@@ -33,7 +33,7 @@ router.put(
 // @access  Private
 router.delete(
   "/:id",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   deleteSize
 );
 

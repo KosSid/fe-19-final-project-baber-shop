@@ -1,5 +1,5 @@
 import React from 'react'
-import './Register.less'
+import './styles.less'
 
 function Register (props) {
   return (

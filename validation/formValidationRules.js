@@ -66,7 +66,7 @@ const formValidationRules = [
     method: "matches",
     validWhen: true,
     args: [/^[a-zA-Z0-9]+$/],
-    message: "Allowed characters for login is a-z, A-Z, 0-9."
+    message: "Allowed characters for Login is a-z, A-Z, 0-9."
   },
   {
     field: "login",

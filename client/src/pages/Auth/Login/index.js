@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.less'
+import './styles.less'
 
 function Login (props) {
   return (

@@ -19,7 +19,7 @@ const {
 const storage = multer.diskStorage({
   // Destination, where files should be stored (image url)
   destination: function(req, file, cb) {
-    var newDestination = req.headers.path; // We sen image url in header ("path"), when making axios request
+    var newDestination = req.headers.path; // We sen image url in Header ("path"), when making axios request
     fse.mkdirsSync(newDestination); // We creating folder in destination, specified in headers "path"
     cb(null, newDestination); // Saving file
   },
@@ -56,26 +56,26 @@ const upload = multer({
 // @access  Private
 router.post(
   "/images",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   upload.array("photos"),
   addImages
 );
 
 // @route   POST /products
-// @desc    Create new product
+// @desc    Create new Product
 // @access  Private
 router.post(
   "/",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   addProduct
 );
 
 // @route   PUT /products/:id
-// @desc    Update existing product
+// @desc    Update existing Product
 // @access  Private
 router.put(
   "/:id",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   updateProduct
 );
 
@@ -95,7 +95,7 @@ router.get("/filter", getProductsFilterParams);
 router.post("/search", searchProducts);
 
 // @route   GET /products/:id
-// @desc    GET existing product by id
+// @desc    GET existing Product by id
 // @access  Public
 router.get("/:itemNo", getProductById);
 

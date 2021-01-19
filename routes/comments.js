@@ -46,8 +46,8 @@ router.get("/", getComments);
 router.get("/customer/:customerId", getCustomerComments);
 
 // @route   GET /comments/:productId
-// @desc    GET existing comments of particular product
+// @desc    GET existing comments of particular Product
 // @access  Public
-router.get("/product/:productId", getProductComments);
+router.get("/Product/:productId", getProductComments);
 
 module.exports = router;

@@ -16,10 +16,10 @@ const {
 // @access  Public
 router.post("/", createCustomer);
 
-// @route   POST /customers/login
+// @route   POST /customers/Login
 // @desc    Login Customer / Returning JWT Token
 // @access  Public
-router.post("/login", loginCustomer);
+router.post("/Login", loginCustomer);
 
 // @route   GET /
 // @desc    Return current customer

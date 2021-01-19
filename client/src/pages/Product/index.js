@@ -1,5 +1,5 @@
 import React from 'react'
-import './Product.less'
+import './styles.less'
 
 function Product (props) {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Menu, Badge } from 'antd'
-import './SiteHeader.less'
+import './styles.less'
 import { Link } from 'react-router-dom'
 import {
   AppstoreOutlined,
