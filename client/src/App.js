@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import 'antd/dist/antd.less'
-import { Layout, Menu } from 'antd';
-import Index from './components/Header'
+import { Layout} from 'antd';
+import SiteHeader from './components/header/SiteHeader'
 import { getProducts } from './functions/products/product'
 import MainRoutes from './routes/MainRoutes'
 const { Content, Footer } = Layout;
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <Layout>
-      <Index/>
+      <SiteHeader/>
       <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64, height: '100vh' }}>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
           <MainRoutes/>

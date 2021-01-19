@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import UserRoute from './protectedRoutes/UserRoute'
+// import UserRoute from './protectedRoutes/UserRoute'
 import AdminRoute from './protectedRoutes/AdminRoute'
 
 // components import

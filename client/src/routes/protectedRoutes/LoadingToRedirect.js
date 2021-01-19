@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useHistory} from 'react-router-dom';
-import {useState, useEffect} from 'react'
 
 const LoadingToRedirect = () => {
     const [count, setCount] = useState(5);
-    let history = useHistory();
+    const history = useHistory();
 
     useEffect(() => {
         const interval = setInterval(() => {
