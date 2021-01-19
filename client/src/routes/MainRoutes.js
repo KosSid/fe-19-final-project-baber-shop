@@ -19,7 +19,7 @@ function MainRoutes () {
       <Route exact path={'/register'} component={Register}/>
       <Route exact path={'/login'} component={Login}/>
       <Route exact path={'/forgot/password'} component={ForgotPassword}/>
-      <Route exact path={'/cart'} component={Cart}/>
+      <Route exact path={'/Cart'} component={Cart}/>
       <Route exact path={'/shop'} component={Shop}/>
       <AdminRoute exact path={'/admin/dashboard'} component={AdminDashboard}/>
       <Route exact path="*" render={() => <div>Page is not found</div>} />
