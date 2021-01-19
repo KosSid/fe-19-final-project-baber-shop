@@ -56,26 +56,26 @@ const upload = multer({
 // @access  Private
 router.post(
   "/images",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   upload.array("photos"),
   addImages
 );
 
 // @route   POST /products
-// @desc    Create new product
+// @desc    Create new Index
 // @access  Private
 router.post(
   "/",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   addProduct
 );
 
 // @route   PUT /products/:id
-// @desc    Update existing product
+// @desc    Update existing Index
 // @access  Private
 router.put(
   "/:id",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   updateProduct
 );
 
@@ -95,7 +95,7 @@ router.get("/filter", getProductsFilterParams);
 router.post("/search", searchProducts);
 
 // @route   GET /products/:id
-// @desc    GET existing product by id
+// @desc    GET existing Index by id
 // @access  Public
 router.get("/:itemNo", getProductById);
 

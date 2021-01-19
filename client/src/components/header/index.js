@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Menu, Badge } from 'antd'
-import './SiteHeader.less'
+import './styles.less'
 import { Link } from 'react-router-dom'
 import {
   AppstoreOutlined,
@@ -15,7 +15,7 @@ import {
 const { Header } = Layout
 const { Item } = Menu
 
-function SiteHeader() {
+function Index() {
   return (
     <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
       <div className="logo" />
@@ -52,4 +52,4 @@ function SiteHeader() {
   )
 }
 
-export default SiteHeader
+export default Index

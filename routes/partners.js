@@ -15,7 +15,7 @@ const {
 // @access  Private
 router.post(
   "/",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   addPartner
 );
 
@@ -24,7 +24,7 @@ router.post(
 // @access  Private
 router.put(
   "/:customId",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   updatePartner
 );
 
@@ -33,7 +33,7 @@ router.put(
 // @access  Private
 router.delete(
   "/:customId",
-  passport.authenticate("jwt-admin", { session: false }),
+  passport.authenticate("jwt-Admin", { session: false }),
   deletePartner
 );
 

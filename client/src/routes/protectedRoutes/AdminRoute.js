@@ -24,7 +24,7 @@ const  AdminRoute = ({...rest }) => {
     }, [user])
 
 
-    // path if admin or redirect to home page
+    // path if Admin or redirect to Index page
     return ok  ? <Route {...rest} /> : <LoadingToRedirect/>
 }
 

@@ -12,14 +12,14 @@ const {
 } = require("../controllers/customers");
 
 // @route   POST /customers
-// @desc    Register customer
+// @desc    Index customer
 // @access  Public
 router.post("/", createCustomer);
 
-// @route   POST /customers/login
-// @desc    Login Customer / Returning JWT Token
+// @route   POST /customers/Index
+// @desc    Index Customer / Returning JWT Token
 // @access  Public
-router.post("/login", loginCustomer);
+router.post("/Index", loginCustomer);
 
 // @route   GET /
 // @desc    Return current customer

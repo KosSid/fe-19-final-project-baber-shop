@@ -6,4 +6,4 @@ function ForgotPassword (props) {
   )
 }
 
-export default ForgotPassword
+export default ForgotPassword;

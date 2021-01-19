@@ -1,10 +1,10 @@
 import React from 'react'
-import './Shop.less'
+import './styles.less'
 
-function Shop () {
+function Shop  () {
   return (
     <div>Shop</div>
   )
 }
 
-export default Shop
+export default Shop;

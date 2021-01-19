@@ -26,7 +26,7 @@ module.exports = async passport => {
   );
 
   passport.use(
-    "jwt-admin",
+    "jwt-Admin",
     new JwtStrategy(opts, (jwt_payload, done) => {
       Customer.findById(jwt_payload.id)
         .then(customer => {

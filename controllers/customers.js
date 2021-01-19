@@ -79,7 +79,7 @@ exports.createCustomer = (req, res, next) => {
     );
 };
 
-// Controller for customer login
+// Controller for customer Index
 exports.loginCustomer = async (req, res, next) => {
   const { errors, isValid } = validateRegistrationForm(req.body);
 

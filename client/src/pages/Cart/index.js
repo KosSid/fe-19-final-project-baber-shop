@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cart.less'
+import './styles.less'
 
 function Cart (props) {
   return (
@@ -7,4 +7,4 @@ function Cart (props) {
   )
 }
 
-export default Cart
+export default Cart;

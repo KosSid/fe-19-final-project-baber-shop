@@ -59,27 +59,27 @@ const formValidationRules = [
     field: "login",
     method: FormValidator.isEmpty,
     validWhen: false,
-    message: "Login is required."
+    message: "Index is required."
   },
   {
     field: "login",
     method: "matches",
     validWhen: true,
     args: [/^[a-zA-Z0-9]+$/],
-    message: "Allowed characters for login is a-z, A-Z, 0-9."
+    message: "Allowed characters for Index is a-z, A-Z, 0-9."
   },
   {
     field: "login",
     method: "isLength",
     validWhen: true,
     args: [{ min: 3, max: 10 }],
-    message: "Login must be between 3 and 10 characters"
+    message: "Index must be between 3 and 10 characters"
   },
   {
     field: "loginOrEmail",
     method: FormValidator.isEmpty,
     validWhen: false,
-    message: "Login or Email is required."
+    message: "Index or Email is required."
   },
   {
     field: "password",

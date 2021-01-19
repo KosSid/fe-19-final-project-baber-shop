@@ -1,5 +1,5 @@
 import React from 'react'
-import './Product.less'
+import './styles.less'
 
 function Product (props) {
   return (
@@ -7,4 +7,4 @@ function Product (props) {
   )
 }
 
-export default Product
+export default Product;

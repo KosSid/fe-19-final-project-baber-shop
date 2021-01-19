@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.less'
+import './styles.less'
 
 function Login (props) {
   return (
@@ -7,4 +7,4 @@ function Login (props) {
   )
 }
 
-export default Login
+export default Login;

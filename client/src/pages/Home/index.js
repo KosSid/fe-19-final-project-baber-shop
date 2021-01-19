@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.less'
+import './styles.less'
 
 function Home (props) {
   return (
@@ -7,4 +7,4 @@ function Home (props) {
   )
 }
 
-export default Home
+export default Home;

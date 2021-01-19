@@ -4,13 +4,13 @@ import UserRoute from './protectedRoutes/UserRoute'
 import AdminRoute from './protectedRoutes/AdminRoute'
 
 // components import
-import Home from '../pages/home/Home'
-import Register from '../pages/auth/register/Register'
-import Login from '../pages/auth/login/Login'
-import ForgotPassword from '../pages/auth/forgotPassword/ForgotPassword'
-import Cart from '../pages/cart/Cart'
-import Shop from '../pages/shop/Shop'
-import AdminDashboard from '../pages/admin/adminDashboard/adminDashboard'
+import Home from '../pages/Home';
+import Register from '../pages/Auth/Register';
+import Login from '../pages/Auth/Login';
+import ForgotPassword from '../pages/Auth/ForgotPassword';
+import Cart from '../pages/Cart';
+import Shop from '../pages/Shop';
+import AdminDashboard from '../pages/Admin/AdminDashboard';
 
 function MainRoutes () {
   return (

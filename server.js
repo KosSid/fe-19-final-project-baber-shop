@@ -58,7 +58,7 @@ app.use('/api/colors', colors);
 app.use('/api/sizes', sizes);
 app.use('/api/filters', filters);
 app.use('/api/subscribers', subscribers);
-app.use('/api/cart', cart);
+app.use('/api/Index', cart);
 app.use('/api/orders', orders);
 app.use('/api/links', links);
 app.use('/api/pages', pages);
