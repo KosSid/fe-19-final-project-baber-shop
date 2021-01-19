@@ -5,12 +5,12 @@ import AdminRoute from './protectedRoutes/AdminRoute'
 
 // components import
 import Home from '../pages/Home'
-import Register from '../pages/Auth/Register'
-import Login from '../pages/Auth/Login'
-import ForgotPassword from '../pages/Auth/ForgotPassword'
+import Register from '../pages/auth/Register'
+import Login from '../pages/auth/Login'
+import ForgotPassword from '../pages/auth/ForgotPassword'
 import Cart from '../pages/Cart'
 import Shop from '../pages/Shop'
-import AdminDashboard from '../pages/Admin/AdminDashboard'
+import AdminDashboard from '../pages/admin/AdminDashboard'
 
 function MainRoutes () {
   return (
