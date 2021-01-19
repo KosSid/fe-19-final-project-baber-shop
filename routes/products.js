@@ -19,7 +19,7 @@ const {
 const storage = multer.diskStorage({
   // Destination, where files should be stored (image url)
   destination: function(req, file, cb) {
-    var newDestination = req.headers.path; // We sen image url in header ("path"), when making axios request
+    var newDestination = req.headers.path; // We sen image url in Header ("path"), when making axios request
     fse.mkdirsSync(newDestination); // We creating folder in destination, specified in headers "path"
     cb(null, newDestination); // Saving file
   },

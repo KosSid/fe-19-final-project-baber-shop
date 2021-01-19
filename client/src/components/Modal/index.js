@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles.less'
 
-function Index (props) {
+function Modal (props) {
   return (
     <div>Modal </div>
   )
 }
 
-export default Index
+export default Modal;
