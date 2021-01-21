@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout, Menu, Badge } from 'antd'
 import './styles.less'
+import LiveSearch from "./LiveSearch";
 import { Link } from 'react-router-dom'
 import {
   AppstoreOutlined,
@@ -47,6 +48,7 @@ function SiteHeader() {
           <Link to="/admin/dashboard">Admin dashboard</Link>
         </Item>
       </Menu>
+      <LiveSearch/>
     </Header>
   )
 }
