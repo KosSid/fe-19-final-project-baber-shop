@@ -14,6 +14,7 @@ import PopoverBasket from '../PopoverBasket/index'
 import LiveSearch from './LiveSearch'
 
 
+
 const {Header} = Layout
 const {Item} = Menu
 
@@ -39,7 +40,7 @@ function SiteHeader() {
                 </Item>
 
                 <Item key="login" icon={<UserOutlined/>}>
-                    <Link to="/login">Login</Link>
+                    <Link to='/login'>LogIn</Link>
                 </Item>
 
               <Item key="error-page">
