@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./styles.less";
 
-function AdminDashboard (props) {
+
+
+const AdminDashboard = () => {
+
   return (
-    <div>AdminDashboard</div>
-  )
-}
+    <div>Admin Dashboard</div>
+  );
+};
 
-export default AdminDashboard
+export default AdminDashboard;
