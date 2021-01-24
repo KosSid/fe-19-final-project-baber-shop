@@ -6,7 +6,7 @@ import {cartAction} from "../../store/cart/cartAction";
 
 const ProductCard = ({ product }) => {
 
-    const {name, imageUrls, currentPrice, itemNo, categories} = product;
+    const {name, currentPrice, itemNo, categories} = product;
     const dispatch = useDispatch();
 
     const onAddToCart = (e) => {
@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
                         <img
                             className='product-card-img'
                             alt="product-item"
-                            src={imageUrls[0]}
+                            src={'https://livecdn.wmarket.com.ua/media/catalog/product/cache/1/small_image/250x250/d58d44b981214661663244ef00ea7e30/h/y/hyjytjyuk.jpg'}
                         />
                     }
                     >

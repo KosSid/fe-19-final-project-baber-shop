@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './store/configureStore'
+import './reset.css'
 import './index.css'
 
 ReactDOM.render(
