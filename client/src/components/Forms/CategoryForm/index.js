@@ -121,7 +121,7 @@ const CategoryForm = () => {
   };
 
   // Activate Submit button once form is filled handleOnFieldsChange
-  const handleOnFieldsChange = (e) => {
+  const handleOnFieldsChange = () => {
     // handleSubmitButtonDisable
     setDisabledBtn(!form.isFieldsTouched(true) || form.getFieldsError().filter(({ errors }) => errors.length).length > 0);
   }

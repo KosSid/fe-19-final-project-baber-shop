@@ -7,7 +7,7 @@ import CategoryForm from "../../../components/Forms/CategoryForm";
 
 const { Content} = Layout;
 
-const AdminCatergory = (props) => {
+const AdminCatergory = () => {
 
   useEffect(() => {
     console.log('AdminCategory did Mount');

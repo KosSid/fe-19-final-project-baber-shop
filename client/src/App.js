@@ -4,6 +4,7 @@ import { Layout} from 'antd';
 import SiteHeader from './components/Header'
 import { getProducts } from './functions/products/product'
 import MainRoutes from './routes/MainRoutes'
+
 const { Content, Footer } = Layout;
 
 const App = () => {
