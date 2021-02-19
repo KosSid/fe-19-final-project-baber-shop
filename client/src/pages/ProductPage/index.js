@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './styles.less'
 import {Col, Row} from 'antd'
 import {useDispatch} from "react-redux";
-import {cartAction} from "../../store/cart/cartAction";
+import {addToCart} from "../../store/cart/actionCart";
 import Banner from "../../components/Banner";
 import ProductCarousel from "../../components/ProductCarousel";
 import { useParams } from 'react-router-dom'
@@ -35,7 +35,7 @@ const ProductPage = () => {
 
     const onAddToCart = (e) => {
         e.preventDefault();
-        dispatch(cartAction(product));
+        dispatch(addToCart(product));
     }
 
     return (

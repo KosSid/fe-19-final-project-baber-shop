@@ -78,6 +78,7 @@
   padding: 5px;
   background: white;
   border-radius: 12px;
+}
 
 .header-breadcrumbs {
   margin-bottom: 0 !important;
@@ -134,52 +135,52 @@
   }
 
 }
+  @media (max-width: 768px ) {
 
-@media (max-width: 768px ) {
+    .user-icon{
+      margin-left: 24px;
+    }
+    .contact-number {
+      display: none;
+    }
 
-  .user-icon{
-    margin-left: 24px;
+    .logout-title {
+      display: none;
+    }
+    .catalogue-btn{
+      max-width: max-content;
+      min-width: 112px;
+      background-color: black;
+
+    }
   }
-  .contact-number {
-    display: none;
+
+  .username {
+    font-weight: 600;
+    font-size: 20px;
+    vertical-align: text-bottom;
   }
 
-  .logout-title {
-    display: none;
+  .logoutBtn {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
   }
-  .catalogue-btn{
-    max-width: max-content;
-    min-width: 112px;
-    background-color: black;
 
+  .header-profile {
+    color: @black;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: @yellow-6;
+      text-shadow: 1px 1px 1px @black;
+    }
   }
-}
-
-.username {
-  font-weight: 600;
-  font-size: 20px;
-  vertical-align: text-bottom;
-}
-
-.logoutBtn {
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.header-profile {
-  color: @black;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: @yellow-6;
-    text-shadow: 1px 1px 1px @black;
+  @media (max-width: 950px ) {
+    .contact-number {
+      display: none;
+    }
   }
-}
-@media (max-width: 950px ) {
-  .contact-number {
-    display: none;
-  }
-}
+
 
