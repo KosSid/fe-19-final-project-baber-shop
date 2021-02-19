@@ -1,5 +1,5 @@
 .ant-input-affix-wrapper-sm:hover{
-  border-color: black;
+  border-color: #fadb14;
 }
 .antd-wave-shadow-color{
   color: black;
@@ -7,12 +7,24 @@
 .ant-input-affix-wrapper > input.ant-input{
   padding: 0 15px;
 }
+.ant-input-affix-wrapper,
+.ant-input-affix-wrapper-focused{
+  box-shadow: none;
+  border-color: black;
+}
 .search-product{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.search-product-logo{
-  width: 50px;
-  height: 50px;
+  &-logo{
+    width: 50px;
+    height: 50px;
+  }
+  &-name{
+    font-weight: bold;
+  }
+  &-price{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px grey;
+  }
 }

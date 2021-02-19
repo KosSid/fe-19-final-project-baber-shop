@@ -11,10 +11,9 @@ const prefix = <SearchOutlined/>
 const LiveSearch = () => {
   const [items, setItems] = useState([])
   const [filteredItem, setFilteredItem] = useState("")
-  console.log('dsdsdsdss', items)
 
   const findItem = (event) => {
-    setFilteredItem(event.target.value)
+    setFilteredItem(event.target.value.toLowerCase())
   }
 
   const filterData = (products) =>{
@@ -39,8 +38,8 @@ const LiveSearch = () => {
       <Link to={`/${el.id}`}>
         <div className='search-product'>
           <img className='search-product-logo' src={el.imageUrls[0]} alt="product logo"/>
-          <p>{el.name}</p>
-          <p>price: {el.currentPrice}</p>
+          <p className='search-product-name'>{el.name.toUpperCase()}</p>
+          <p className='search-product-price'>{el.currentPrice} $</p>
         </div></Link>
     </Menu.Item>
   )
