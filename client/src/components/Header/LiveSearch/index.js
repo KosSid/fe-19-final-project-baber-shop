@@ -4,43 +4,43 @@ import { Input, Menu, Dropdown } from 'antd'
 import { Link } from 'react-router-dom'
 import { SearchOutlined } from '@ant-design/icons'
 import { getSearchedProducts } from '../../../functions/products/product'
-import {debounce} from 'lodash'
+import { debounce } from 'lodash'
 
 const prefix = <SearchOutlined/>
 
 const LiveSearch = () => {
   const [items, setItems] = useState([])
-  const [filteredItem, setFilteredItem] = useState("")
+  const [filteredItem, setFilteredItem] = useState('')
 
   const findItem = (event) => {
     setFilteredItem(event.target.value.toLowerCase())
   }
 
-  const filterData = (products) =>{
+  const filterData = (products) => {
     setItems(products.data.filter(item => {
       return item.name.toLowerCase().match(filteredItem)
     }))
   }
 
-  const updateQuery = () =>{
-    if(!filteredItem){
+  const updateQuery = () => {
+    if (!filteredItem) {
       return setItems([])
     }
-    getSearchedProducts({query: filteredItem})
+    getSearchedProducts({ query: filteredItem })
       .then(products => filterData(products))
       .catch(err => console.log(err))
   }
-  const delayedQuery = useCallback(debounce(updateQuery, 500),[filteredItem])
+  const delayedQuery = useCallback(debounce(updateQuery, 500), [filteredItem])
 
-
-  const products = items.map((el,index) =>
+  const products = items.map((el, index) =>
     <Menu.Item key={index}>
       <Link to={`/${el.id}`}>
         <div className='search-product'>
           <img className='search-product-logo' src={el.imageUrls[0]} alt="product logo"/>
           <p className='search-product-name'>{el.name.toUpperCase()}</p>
           <p className='search-product-price'>{el.currentPrice} $</p>
-        </div></Link>
+        </div>
+      </Link>
     </Menu.Item>
   )
   const menu = (<Menu>
@@ -53,8 +53,6 @@ const LiveSearch = () => {
     delayedQuery()
     return delayedQuery.cancel
   }, [delayedQuery])
-
-
 
   return (
     <div className='search-container'>
