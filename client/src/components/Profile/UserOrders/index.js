@@ -38,7 +38,6 @@ const UserOrders = () => {
                     if (!cleanupFunction) {
                         setLoading(false)
                         if (orders !== null) {
-                            console.log('orders ==>>', orders)
                             setOrders(orders || [])
                         }
                     }

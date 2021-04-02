@@ -6,7 +6,7 @@ const { deleteRequest, put } = Ajax
 
 export const addToCart = (item,_id, isAuthenticated)  => {
   if(isAuthenticated){
-    put('/cart/',_id).then(r => console.log(r.products))
+    put('/cart/',_id)
   }
   return {
     type: ADDING_TO_CART,
@@ -16,7 +16,7 @@ export const addToCart = (item,_id, isAuthenticated)  => {
 
 export const deleteFromCart = (_id, isAuth)  => {
   if (isAuth) {
-    deleteRequest('/cart', _id).then(r => console.log(r.products))
+    deleteRequest('/cart', _id)
   }
   return {
     type: DELETE_FROM_CART,
@@ -26,7 +26,7 @@ export const deleteFromCart = (_id, isAuth)  => {
 
 export const increaseQuantity = (_id, isAuth) => {
   if (isAuth) {
-    put('/cart/', _id).then(r => console.log(r.products));
+    put('/cart/', _id)
   }
   return {
     type: INCREASE_QUANTITY,
@@ -36,7 +36,7 @@ export const increaseQuantity = (_id, isAuth) => {
 
 export const decreaseQuantity = (_id, isAuth) => {
   if (isAuth) {
-    deleteRequest('/cart/product', _id).then(r => console.log(r.products))
+    deleteRequest('/cart/product', _id)
   }
   return {
     type: DECREASE_QUANTITY,

@@ -53,14 +53,12 @@ const ChangePassword = () => {
     const onFinish = async () => {
         try {
             const values = await form.validateFields();
-            console.log('Values', values)
             if (values.oldPassword !== values.newPassword) {
                 const updatedPassword = {
                     password: values.oldPassword,
                     newPassword: values.newPassword
                 }
                 const result = await put('/customers/password', '', updatedPassword);
-                console.log(result)
                 if (result.password === 'Password does not match') {
                     warning3()
                 } else {
