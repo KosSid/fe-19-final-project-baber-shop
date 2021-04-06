@@ -50,7 +50,6 @@ test("UserInformation confirm button called Submit", () => {
   });
 
   const text = document.querySelector("button > span");
-  console.log(text.innerHTML)
   expect(text.innerHTML).toBe("Submit");
 
 });
